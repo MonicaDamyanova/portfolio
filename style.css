@@ -131,22 +131,39 @@ h1 {
     text-align: center;
 }
 
-/* Projects page */
+/* Shared page layout (projects, experiences) */
 
-.projects-page {
+.page-main {
     padding-top: 24px;
 }
 
-.projects-title {
+.page-title {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 8px;
     margin-bottom: 24px;
 }
 
+.content-divider {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    /* Even space above and below the rule; with section margins, collapse keeps projects spacing */
+    margin: 24px 0;
+}
+
+.page-main section {
+    margin-bottom: 24px;
+}
+
+/* Projects page */
+
 .project-card {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+}
+
+.project-card,
+.experience-card {
     line-height: 1.5;
 }
 
@@ -161,35 +178,11 @@ h1 {
     margin: 0 0 8px;
 }
 
-.projects-page section {
-    margin-bottom: 24px;
-}
-
-.projects-divider {
-    border: 0;
-    border-top: 1px solid #e5e5e5;
-    margin: 0 0 24px;
-}
-
 .project-content p {
     margin: 0 0 10px;
 }
 
 /* Experience page */
-
-.experiences-page {
-    padding-top: 24px;
-}
-
-.experiences-title {
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 8px;
-    margin-bottom: 24px;
-}
-
-.experience-card {
-    line-height: 1.5;
-}
 
 .experience-card h2 {
     margin: 0 0 6px;
@@ -207,25 +200,6 @@ h1 {
 
 .experience-notes li {
     margin-bottom: 6px;
-}
-
-.experiences-page section {
-    margin-bottom: 24px;
-}
-
-.experiences-divider {
-    border: 0;
-    border-top: 1px solid #e5e5e5;
-    margin: 0 0 24px;
-}
-
-.education-section {
-    margin-top: 0;
-}
-
-.experiences-major-divider {
-    margin-top: 8px;
-    margin-bottom: 24px;
 }
 
 .education-degree {
