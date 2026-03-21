@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "DejaVu Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-400-normal.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-400-normal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DejaVu Serif";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-700-normal.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-700-normal.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DejaVu Serif";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-400-italic.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-400-italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "DejaVu Serif";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-700-italic.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/fontsource/fonts/dejavu-serif@latest/latin-700-italic.woff") format("woff");
+}
+
+/* Global */
+
+body {
+    margin: 0;
+    font-family: "DejaVu Serif", "Times New Roman", Times, serif;
+}
+
+h1 {
+    margin: 0.2em 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.page-container {
+    width: min(90%, 750px);
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.site-nav {
+    display: flex;
+    gap: 16px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.center-contents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-me {
+    margin: 0 auto;
+    align-items: center;
+    text-align: left;
+    padding-top: 32px;
+    width: 100%;
+    line-height: 1.6;
+    gap: 12px;
+}
+
+#about-me img {
+    display: block;
+    margin: 0 auto;
+    width: min(100%, 300px);
+    height: auto;
+}
+
+#about-me h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.location-line {
+    margin-top: -6px;
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.3;
+}
+
+.about-blurb {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-links a:visited {
+    color: #000;
+}
+
+.social-links a i {
+    font-size: 28px;
+    width: 28px;
+    text-align: center;
+}
+
+/* Projects page */
+
+.projects-page {
+    padding-top: 24px;
+}
+
+.projects-title {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    line-height: 1.5;
+}
+
+.project-card img {
+    width: min(100%, 280px);
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.project-content h2 {
+    margin: 0 0 8px;
+}
+
+.projects-page section {
+    margin-bottom: 24px;
+}
+
+.projects-divider {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 0 0 24px;
+}
+
+.project-content p {
+    margin: 0 0 10px;
+}
+
+/* Experience page */
+
+.experiences-page {
+    padding-top: 24px;
+}
+
+.experiences-title {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.experience-card {
+    line-height: 1.5;
+}
+
+.experience-card h2 {
+    margin: 0 0 6px;
+}
+
+.experience-meta {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.experience-notes {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.experience-notes li {
+    margin-bottom: 6px;
+}
+
+.experiences-page section {
+    margin-bottom: 24px;
+}
+
+.experiences-divider {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 0 0 24px;
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        width: 90%;
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #about-me img {
+        width: min(80%, 220px);
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+}
