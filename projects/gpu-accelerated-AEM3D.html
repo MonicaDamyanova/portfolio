@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GPU-Accelerated Physics Engine Development | Portfolio Website</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+	<body>
+		<div class="page-container">
+			<header class="site-header">
+				<nav class="site-nav">
+					<a href="../index.html">Home</a>
+					<a href="../projects.html">Projects</a>
+					<a href="../experiences.html">Experiences</a>
+				</nav>
+			</header>
+
+			<main class="page-main">
+				<article class="project-article">
+					<header>
+						<h1 class="page-title">GPU-Accelerated Physics Engine Development</h1>
+						<p class="experience-meta">May 2026 - Aug 2026</p>
+					</header>
+
+					<figure class="project-article-figure">
+						<img src="https://placehold.co/720x400/e5e5e5/333333?text=SWEP+Project+Demo" width="720" height="400" alt="Placeholder image for the Raspberry Pi 5 bare metal project">
+						<figcaption>Placeholder image — will update with demo output soon.</figcaption>
+					</figure>
+
+					<p>
+					  There is a lot to say about this project... here is my draft.
+          </p>
+          <p>
+            The get a better understanding on how the original code works I 
+            did a lot of profiling using tools like VTune and prof. The original
+            code was written in Fortran and recommeneded to be compiled using
+            the ifx Fortran compiler. This makes it really easy to use VTune.
+          </p>
+          <p>
+            The output of the profiler showed that a lot of the time spent on 
+            the simulation was spent on the overhead to start up multithreading
+            with openMP. Upon investigating the code, much of this openMP
+            implementation was not optimized, so there would be a lot of room 
+            to make it better. However, to make it significantly faster, it
+            would need to be completely redesigned from scratch.
+          </p>
+          <p>
+            ...
+          </p>
+          <p>
+            In the end, the speed up based on one common demo simulation was 
+            about 10x. There are many factors which affect this number, Even 
+            re running the simulation changes it a bit, so it is very rough.
+            However, it is proof that this prototype would be wrothwhile,
+            especially considering how many further improvements could be done 
+            which were out of the scope of this prototype.
+          </p>
+          <p>
+            ... Discuss improvements ...
+          </p>
+        </article>
+			</main>
+		</div>
+	</body>
+</html>
